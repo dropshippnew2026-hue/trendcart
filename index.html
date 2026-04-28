@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendKart - Dropshipping Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f6f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 15px;
+    }
+
+    .hero {
+      padding: 80px 8%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #dbeafe;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #111827;
+      padding: 14px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: white;
+      color: #111827;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .hero-card img {
+      width: 100%;
+      border-radius: 18px;
+      margin-bottom: 18px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 42px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      color: #2563eb;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .badge-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .badge {
+      background: white;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .offer {
+      background: #111827;
+      color: white;
+      border-radius: 28px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .offer h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .faq-item {
+      background: white;
+      margin-bottom: 16px;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    }
+
+    .contact {
+      text-align: center;
+      background: #e0f2fe;
+      border-radius: 28px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .grid,
+      .badge-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TrendKart</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Trending Products Delivered To Your Doorstep</h1>
+        <p>Shop smart gadgets, lifestyle products, fashion accessories and home essentials at affordable prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900" alt="Trending products" />
+        <h2>Hot Deal Today</h2>
+        <p>Get up to 40% off on selected products. Limited time offer.</p>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2 class="section-title">Why Shop With Us?</h2>
+      <p class="section-subtitle">Simple, safe and budget-friendly shopping experience.</p>
+      <div class="badge-row">
+        <div class="badge">
+          <h3>Fast Delivery</h3>
+          <p>Quick shipping on selected items.</p>
+        </div>
+        <div class="badge">
+          <h3>Best Price</h3>
+          <p>Affordable trending products.</p>
+        </div>
+        <div class="badge">
+          <h3>Secure Payment</h3>
+          <p>UPI, card and COD options.</p>
+        </div>
+        <div class="badge">
+          <h3>Support</h3>
+          <p>Easy WhatsApp assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Start with 3-6 winning products and test demand.</p>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900" alt="Wireless headphones" />
+          <h3>Wireless Headphones</h3>
+          <p>Premium sound, stylish look and comfortable design.</p>
+          <div class="price">₹999</div>
+          <a href="#contact" class="btn">Order Now</a>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900" alt="Beauty product" />
+          <h3>Beauty Care Kit</h3>
+          <p>Useful skincare and grooming product combo.</p>
+          <div class="price">₹699</div>
+          <a href="#contact" class="btn">Order Now</a>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900" alt="Home decor" />
+          <h3>Smart Home Decor</h3>
+          <p>Modern home essentials for daily comfort.</p>
+          <div class="price">₹799</div>
+          <a href="#contact" class="btn">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="offer">
+        <h2>Launch Offer: Free Delivery This Week</h2>
+        <p>Use this section for discounts, coupon codes, festival offers or new product launches.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq-item">
+        <h3>How do I place an order?</h3>
+        <p>Click Order Now and contact us through WhatsApp or email.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer Cash on Delivery?</h3>
+        <p>Yes, COD can be added depending on your shipping partner.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How long does delivery take?</h3>
+        <p>Usually 5-10 business days depending on the product and location.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Ready To Order?</h2>
+      <p class="section-subtitle">Contact us now and get the latest product deals.</p>
+      <a class="btn" href="https://wa.me/917044799324">Chat on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TrendKart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
