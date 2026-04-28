@@ -319,3 +319,121 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendCart - Premium Online Store</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}html{scroll-behavior:smooth}body{background:#f8fafc;color:#0f172a}.topbar{background:#020617;color:#e2e8f0;text-align:center;padding:10px;font-size:14px}header{background:rgba(255,255,255,.92);backdrop-filter:blur(12px);padding:16px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;box-shadow:0 4px 20px rgba(15,23,42,.06)}.logo{font-size:28px;font-weight:900;letter-spacing:-1px;color:#0f172a}.logo span{color:#2563eb}nav a{color:#0f172a;text-decoration:none;margin-left:28px;font-weight:700;font-size:15px}.cart-btn{background:#0f172a;color:white;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800}.hero{padding:70px 8%;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;background:linear-gradient(135deg,#eff6ff,#f8fafc)}.hero h1{font-size:62px;line-height:1.02;letter-spacing:-3px;margin-bottom:20px}.hero p{font-size:18px;color:#475569;line-height:1.6;margin-bottom:28px;max-width:620px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;background:#2563eb;color:#fff;padding:15px 24px;border-radius:999px;text-decoration:none;font-weight:900;box-shadow:0 10px 24px rgba(37,99,235,.25)}.btn.secondary{background:white;color:#0f172a;border:1px solid #cbd5e1;box-shadow:none}.hero-image{background:white;padding:18px;border-radius:32px;box-shadow:0 25px 70px rgba(15,23,42,.16);position:relative}.hero-image img{width:100%;height:470px;object-fit:cover;border-radius:24px}.floating-card{position:absolute;left:-18px;bottom:38px;background:white;padding:18px 20px;border-radius:20px;box-shadow:0 18px 40px rgba(15,23,42,.18);font-weight:900}.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:28px 8%;background:white}.trust div{text-align:center;font-weight:800;color:#334155}.trust span{display:block;color:#64748b;font-size:13px;font-weight:600;margin-top:5px}section{padding:70px 8%}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}.section-head h2{font-size:38px;letter-spacing:-1px}.section-head p{color:#64748b;max-width:520px;line-height:1.6}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.category{height:210px;border-radius:28px;padding:22px;color:white;display:flex;align-items:end;background-size:cover;background-position:center;overflow:hidden;position:relative}.category:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.68))}.category h3{position:relative;font-size:23px}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.product{background:white;border-radius:28px;overflow:hidden;box-shadow:0 12px 35px rgba(15,23,42,.08);transition:.25s}.product:hover{transform:translateY(-6px)}.product-img{height:285px;background:#e2e8f0;position:relative}.product-img img{width:100%;height:100%;object-fit:cover}.tag{position:absolute;top:15px;left:15px;background:#ef4444;color:white;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:900}.product-body{padding:22px}.stars{color:#f59e0b;margin-bottom:10px}.product h3{font-size:21px;margin-bottom:9px}.product p{color:#64748b;line-height:1.5;margin-bottom:14px}.price-row{display:flex;justify-content:space-between;align-items:center}.price{font-size:24px;font-weight:900;color:#0f172a}.old{color:#94a3b8;text-decoration:line-through;font-size:15px;margin-left:6px}.mini-btn{background:#0f172a;color:white;text-decoration:none;padding:11px 16px;border-radius:999px;font-weight:900}.banner{background:#0f172a;color:white;border-radius:36px;padding:56px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.banner h2{font-size:40px;margin-bottom:10px}.banner p{color:#cbd5e1}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{background:white;padding:30px;border-radius:28px;box-shadow:0 10px 30px rgba(15,23,42,.07)}.num{width:44px;height:44px;border-radius:50%;background:#dbeafe;color:#2563eb;display:grid;place-items:center;font-weight:900;margin-bottom:16px}.faq{max-width:900px;margin:auto}.faq-item{background:white;margin-bottom:14px;padding:24px;border-radius:22px;box-shadow:0 8px 24px rgba(15,23,42,.06)}.contact{background:linear-gradient(135deg,#dbeafe,#fff);border-radius:36px;text-align:center}.contact h2{font-size:42px;margin-bottom:12px}.contact p{color:#475569;margin-bottom:22px}footer{background:#020617;color:#cbd5e1;padding:40px 8%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-logo{font-size:26px;font-weight:900;color:white}@media(max-width:950px){.hero,.banner{grid-template-columns:1fr}.hero h1{font-size:42px}.trust,.categories,.products,.steps{grid-template-columns:1fr}nav{display:none}.hero-image img{height:330px}.section-head{display:block}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Free delivery on prepaid orders • WhatsApp support available</div>
+  <header>
+    <div class="logo">Trend<span>Cart</span></div>
+    <nav>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#how">How It Works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="cart-btn">Order on WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Upgrade Your Lifestyle With Trending Products</h1>
+        <p>Discover smart gadgets, beauty essentials, home decor and daily-use products at budget-friendly prices. Simple ordering, fast support and secure payment options.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn">Shop Best Sellers</a>
+          <a href="#how" class="btn secondary">How To Order</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200" alt="Online shopping" />
+        <div class="floating-card">🔥 Up to 40% OFF</div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div>Secure Payment<span>UPI / COD available</span></div>
+      <div>Easy Order<span>WhatsApp checkout</span></div>
+      <div>Quality Picks<span>Trending products</span></div>
+      <div>Customer Support<span>Quick response</span></div>
+    </div>
+
+    <section id="categories">
+      <div class="section-head">
+        <h2>Shop By Category</h2>
+        <p>Start with focused categories instead of selling everything. This makes your store look more premium and trustworthy.</p>
+      </div>
+      <div class="categories">
+        <div class="category" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900')"><h3>Gadgets</h3></div>
+        <div class="category" style="background-image:url('https://images.unsplash.com/photo-1556228720-195a672e8a03?w=900')"><h3>Beauty</h3></div>
+        <div class="category" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900')"><h3>Home Decor</h3></div>
+        <div class="category" style="background-image:url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=900')"><h3>Fashion</h3></div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="section-head">
+        <h2>Best Sellers</h2>
+        <p>Replace these demo products with your real supplier products, actual prices and product photos.</p>
+      </div>
+      <div class="products">
+        <div class="product">
+          <div class="product-img"><span class="tag">Hot Deal</span><img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=900" alt="Headphones"></div>
+          <div class="product-body"><div class="stars">★★★★★</div><h3>Wireless Headphones</h3><p>Stylish sound experience for daily use, travel and gym.</p><div class="price-row"><div><span class="price">₹999</span><span class="old">₹1499</span></div><a class="mini-btn" href="https://wa.me/917044799324?text=I%20want%20to%20order%20Wireless%20Headphones">Buy</a></div></div>
+        </div>
+        <div class="product">
+          <div class="product-img"><span class="tag">New</span><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900" alt="Beauty kit"></div>
+          <div class="product-body"><div class="stars">★★★★★</div><h3>Beauty Care Kit</h3><p>Useful grooming and skincare combo for everyday routine.</p><div class="price-row"><div><span class="price">₹699</span><span class="old">₹999</span></div><a class="mini-btn" href="https://wa.me/917044799324?text=I%20want%20to%20order%20Beauty%20Care%20Kit">Buy</a></div></div>
+        </div>
+        <div class="product">
+          <div class="product-img"><span class="tag">Sale</span><img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=900" alt="Home light"></div>
+          <div class="product-body"><div class="stars">★★★★☆</div><h3>Smart Room Light</h3><p>Modern lighting product to improve your room setup.</p><div class="price-row"><div><span class="price">₹799</span><span class="old">₹1199</span></div><a class="mini-btn" href="https://wa.me/917044799324?text=I%20want%20to%20order%20Smart%20Room%20Light">Buy</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="banner">
+        <div><h2>Festival Launch Offer</h2><p>Get special discount on selected trending products. Limited time offer for first 50 customers.</p></div>
+        <a href="#contact" class="btn">Claim Offer</a>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="section-head"><h2>How To Order</h2><p>A simple beginner-friendly order process for your dropshipping business.</p></div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Choose Product</h3><p>Select your product from the store and click Buy.</p></div>
+        <div class="step"><div class="num">2</div><h3>Confirm on WhatsApp</h3><p>Send product name, quantity and delivery address.</p></div>
+        <div class="step"><div class="num">3</div><h3>Pay & Receive</h3><p>Pay through UPI/COD and receive the product at home.</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="section-head"><h2>Frequently Asked Questions</h2><p>Answer common customer doubts before they message you.</p></div>
+      <div class="faq">
+        <div class="faq-item"><h3>How long does delivery take?</h3><p>Usually 5-10 business days depending on location and product availability.</p></div>
+        <div class="faq-item"><h3>Do you support Cash on Delivery?</h3><p>COD depends on the product and supplier. Prepaid UPI orders are faster to process.</p></div>
+        <div class="faq-item"><h3>How do I track my order?</h3><p>After dispatch, tracking details will be shared on WhatsApp.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Ready To Place Your Order?</h2>
+      <p>Message us on WhatsApp and our team will help you with product details, price and delivery.</p>
+      <a class="btn" href="https://wa.me/917044799324?text=Hi%20TrendCart%2C%20I%20want%20to%20order">Chat on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><div class="footer-logo">TrendCart</div><p>Premium trending products delivered to your doorstep.</p></div>
+    <div><p>© 2026 TrendCart. All rights reserved.</p></div>
+  </footer>
+</body>
+</html>
